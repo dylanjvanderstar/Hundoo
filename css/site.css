@@ -1,0 +1,109 @@
+:root{
+    --djv-primary-color: rgb(75 48 106);
+    --djv-secondary-color: rgb(206 142 0);
+    --djv-dark-color: #292929;
+    --djv-light-color: #dfe3e4;
+
+    --djv-nav-toggler-glow: rgba(255, 153, 59, .35);
+}
+
+/*sticky footer setup*/
+html, body{
+    height: 100%
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 0 auto;
+    margin-top: 3rem;
+}
+
+.footer{
+    flex-shrink: 0;
+    background-color: var(--djv-dark-color);
+    padding-right:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    color: var(--djv-light-color)
+}
+/*sticky footer setup ends*/
+
+/*navbar overrides*/
+
+#mainNav{
+    background: var(--djv-primary-color);
+}
+
+#mainNav button{
+    border-color: var(--djv-secondary-color);
+}
+
+.nav-toggler-icon-djv{
+    color: var(--djv-secondary-color);
+}
+
+.nav-toggler{
+    color: var(--djv-nav-toggler-glow) !important;
+}
+/*navbar overrides end*/
+
+/* BS Button Override*/
+.btn-primary{
+    color:white !important;
+    background-color: var(--djv-primary-color) !important;
+    border-color: var(--djv-secondary-color) !important;
+
+}
+
+.btn-primary:hover, 
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus{
+    filter: brightness(2.4) !important;
+    border-color: var(--djv-primary-color) !important;
+}
+
+.btn-outline-primary{
+    color: var(--djv-dark-color) !important;
+    border-color: var(--djv-primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus{
+    color: var(--djv-light-color) !important;
+    border-color: var(--djv-secondary-color) !important;
+    background-color: var(--djv-primary-color) !important;
+}
+
+/* Bs Button OVerride Ends*/
+
+.checklist{
+    list-style-type: none;
+}
+
+.checklist>li i{
+    color: var(--djv-secondary-color);
+}
+
+.devicons{
+    font-size: 3.5rem;
+}
+
+.social{
+    font-size: 1.5rem;
+}
+
+.social>a{
+    color: var(--djv-light-color);
+    opacity: .75;
+}
+
+.social>a:hover{
+    color: var(--djv-secondary-color);
+    opacity: .9;
+}
